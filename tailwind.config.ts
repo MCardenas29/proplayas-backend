@@ -63,9 +63,10 @@ const config: Config = {
         },
         fontFamily: {
             display: 'Major Mono Display, monospace',
-            body: 'Fauna One, monspaced',
-            label: 'Manrope, monspaced',
-            heading: 'Playfair Display, monspaced',
+            proplayas: ["'ADAM.CG PRO'", 'sans-serif'],
+            body: 'Fauna One, serif',
+            label: 'Manrope, sans-serif',
+            heading: 'Playfair Display, serif',
         },
         fontSize: {
             'xs': '.75rem',
