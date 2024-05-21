@@ -1,0 +1,9 @@
+/* adam.cg-pro */
+@font-face {
+	font-family: ADAM.CG PRO;
+	font-style: normal;
+	font-weight: 400;
+	src: local("ADAM.CG PRO"), local("ADAM.CGPRO"), url(adam.cg-pro.woff2) format("woff2");
+	font-display: auto;
+}
+
