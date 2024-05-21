@@ -8,6 +8,8 @@ const config: Config = {
     ],
     theme: {
         colors: {
+            'white': '#ffffff',
+            'black': '#000000',
             'sandrift': {
                 '50': '#f5f3f1',
                 '100': '#e6e1db',
@@ -80,8 +82,7 @@ const config: Config = {
             '5xl': '3rem',
             '6xl': '4rem',
         },
-        extend: {
-        },
+        extend: {},
     },
     plugins: [],
 };
