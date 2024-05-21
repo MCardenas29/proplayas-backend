@@ -1,6 +1,6 @@
 import { Icon } from "./icon";
 
-export default function({ className = '', size = 16 }: Icon) {
+export default function({ className = '', size = 24 }: Icon) {
     return (
         <svg className={className} width={size} height={size} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M7 18V17C7 15.6739 7.52678 14.4021 8.46447 13.4645C9.40215 12.5268 10.6739 12 12 12C13.3261 12 14.5979 12.5268 15.5355 13.4645C16.4732 14.4021 17 15.6739 17 17V18" stroke-width="1.5" stroke-linecap="round" />

@@ -1,8 +1,9 @@
+import MenuSvg from "@/icons/menu.svg";
 
 function BarButton() {
     return (
         <button type="button" className="">
-            A
+            <MenuSvg />
         </button>
     )
 }

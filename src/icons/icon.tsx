@@ -1,5 +1,5 @@
 
 export interface Icon {
-    className: string,
-    size: number,
+    className: string | undefined,
+    size: number | undefined,
 }
