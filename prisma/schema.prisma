@@ -14,15 +14,32 @@ datasource db {
 }
 
 model User {
-    id          Int        @id @default(autoincrement())
+    id          Int         @id @default(autoincrement())
     email       String      @unique
-    firstNames  String
-    lastNames   String
-    roles       Role[]     @default([USER])
+    roles       Role[]      @default([USER])
     createdAt   DateTime    @default(now())
     password    String
     avatar      String?
     active      Boolean     @default(true)
+    profile     Profile?
+}
+
+model Profile {
+    id          Int         @id @default(autoincrement())
+    firstNames  String
+    lastNames   String
+    user        User        @relation(fields: [userId], references: [id])
+    userId      Int         @unique
+    node        Node        @relation(fields: [nodeId], references: [id])
+    nodeId      Int
+}
+
+model Node {
+    id          Int         @id @default(autoincrement())
+    name        String
+    code        String      @unique
+    createdAt   DateTime    @default(now())
+    integrants  Profile[]
 }
 
 enum Role {
