@@ -42,6 +42,11 @@ model Node {
     integrants  Profile[]
 }
 
+model Post {
+    id      Int         @id @default(autoincrement())
+    title   String
+}
+
 enum Role {
     ROOT
     ADMIN

@@ -1,4 +1,5 @@
 'use client'
+
 export default {
     on(event: string, callback: (ev: Event) => any) {
         document.addEventListener(event, callback)

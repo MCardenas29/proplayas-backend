@@ -1,14 +1,18 @@
 'use client'
-import MenuSvg from "@/icons/menu.svg";
 import eventBus from "@/eventBus";
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
+import MenuAnimatedSvg from "@/icons/menu-animated.svg";
 
 function NavigationButton() {
-    const clickBtn = useCallback(() => eventBus.dispatch('navigation--toggle'), [])
+    const [isOpen, setOpen] = useState(false)
+    const clickBtn = useCallback(() => {
+        eventBus.dispatch('navigation--toggle')
+        setOpen(!isOpen)
+    }, [isOpen])
 
     return (
         <button type="button" onClick={clickBtn}>
-            <MenuSvg />
+            <MenuAnimatedSvg open={isOpen} />
         </button>
     )
 }

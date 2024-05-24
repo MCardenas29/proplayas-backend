@@ -1,13 +1,5 @@
-import TranslateSvg from "@/icons/translate.svg";
 import NavigationButton from "./NavigationButton";
-
-function TranslateButton() {
-    return (
-        <button type="button" className="">
-            <TranslateSvg />
-        </button>
-    )
-}
+import TranslateButton from "./TranslateButton";
 
 function Appbar() {
     return (
