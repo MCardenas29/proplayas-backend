@@ -8,7 +8,7 @@ import mediaImageFolderSvg from "@/icons/media-image-folder.svg";
 import mediaVideoSvg from "@/icons/media-video.svg";
 import shareAndroidSvg from "@/icons/share-android.svg";
 
-function NavigationItem({ label, to = "#", Icon }: { Icon: ComponentType<IconInterface>, label: string, to?: string }) {
+function NavItem({ label, to = "#", Icon }: { Icon: ComponentType<IconInterface>, label: string, to?: string }) {
     return (
         <Link className="p-3 flex flex-row items-center gap-2 select-none" href={to}>
             <Icon />
@@ -20,12 +20,16 @@ function NavigationItem({ label, to = "#", Icon }: { Icon: ComponentType<IconInt
 function Navigation() {
     return (
         <aside className="flex flex-col w-64 absolute top-0 bottom-0 left-0 overflow-y-auto z-0">
-            <NavigationItem label="Inicio" Icon={homeAltSvg} to="/" />
-            <NavigationItem label="Publicaciones" Icon={glassesSvg} />
-            <NavigationItem label="Nodos" Icon={shareAndroidSvg} />
-            <NavigationItem label="Recursos" Icon={mediaImageFolderSvg} />
-            <NavigationItem label="Webseries" Icon={mediaVideoSvg} />
-            <NavigationItem label="Libros" Icon={bookStackSvg} />
+            <NavItem label="Inicio" Icon={homeAltSvg} to="/" />
+            <NavItem label="Publicaciones" Icon={glassesSvg} />
+            <NavItem label="Nodos" Icon={shareAndroidSvg} />
+            <NavItem label="Recursos" Icon={mediaImageFolderSvg} />
+            <NavItem label="Webseries" Icon={mediaVideoSvg} />
+            <NavItem label="Libros" Icon={bookStackSvg} />
+            <div className="flex-1" />
+            <div className="flex flex-col bg-wheat-100 p-3 rounded-lg">
+                A
+            </div>
         </aside>
     )
 }
