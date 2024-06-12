@@ -82,7 +82,11 @@ const config: Config = {
             '5xl': '3rem',
             '6xl': '4rem',
         },
-        extend: {},
+        extend: {
+            backgroundImage: {
+                'turtle': 'url("/assets/tortuga.jpg")'
+            }
+        },
     },
     plugins: [],
 };

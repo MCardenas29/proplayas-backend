@@ -4,7 +4,7 @@ interface ButtonAttributes extends ButtonHTMLAttributes<HTMLButtonElement> {
     styleType?: ButtonStyle
 }
 
-export function Button({ styleType = ButtonStyle.PLAIN, ...props }: ButtonAttributes) {
+export function Button({ styleType = ButtonStyle.PLAIN, type = "button", ...props }: ButtonAttributes) {
     return (
         <button className={`${styleType == ButtonStyle.FANCY ?
             'rounded-full px-4 shadow-eastern-blue-500 shadow-[inset_-4px_-4px_10px_0px]' :
