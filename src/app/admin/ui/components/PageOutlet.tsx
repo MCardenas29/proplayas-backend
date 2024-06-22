@@ -13,7 +13,7 @@ function PageOutlet({ children }: Readonly<{ children: React.ReactNode }>) {
         return () => eventBus.remove('navigation--toggle', toggle);
     })
 
-    return <main ref={outlet} className={`${isNavOpen ? 'translate-x-full md:translate-x-64' : ''} flex-1 rounded-3xl transition-transform overflow-y-auto bg-white z-10`}>{children}</main>
+    return <main ref={outlet} className={`${isNavOpen ? 'translate-x-full md:translate-x-64' : ''} flex-1 rounded-3xl transition-transform overflow-y-auto bg-white z-10 p-1`}>{children}</main>
 }
 
 export default PageOutlet;

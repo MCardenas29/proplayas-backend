@@ -1,5 +1,5 @@
 'use client'
-import TranslateSvg from "@/icons/translate.svg";
+import { TranslateSVG } from "@/app/admin/ui/icons/translate.svg";
 import { AnimatePresence, motion } from "framer-motion";
 import { useCallback, useState } from "react";
 
@@ -8,9 +8,9 @@ function TranslateButton() {
     const clickBtn = useCallback(() => setOpen(!isOpen), [isOpen])
 
     return (
-        <div className="relative">
-            <button type="button" onClick={clickBtn}>
-                <TranslateSvg />
+        <div className="relative flex flex-row">
+            <button type="button" className="text-2xl" onClick={clickBtn}>
+                <TranslateSVG />
             </button>
             <AnimatePresence>
                 {isOpen && (
