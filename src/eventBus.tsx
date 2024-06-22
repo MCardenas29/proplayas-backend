@@ -14,3 +14,4 @@ export default {
         document.removeEventListener(event, callback)
     }
 }
+

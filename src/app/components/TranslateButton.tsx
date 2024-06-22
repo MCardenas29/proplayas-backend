@@ -15,13 +15,13 @@ function TranslateButton() {
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
-                        initial={{ opacity: 0, y: -50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -50 }}
+                        initial={{ y: -10 }}
+                        animate={{ y: 0 }}
+                        exit={{ y: -10 }}
                         transition={{ duration: 0.1 }}
-                        className={`${isOpen ? '' : 'pointer-events-none'} font-label text-sm flex flex-col absolute top-full right-0 mt-2 z-20 shadow-sm shadow-avocado-400/20 bg-wheat-200 rounded-xl w-max max-w-screen-sm`}>
-                        <button className="flex-1 flex flex-row pt-2 pb-1 px-5">en - Ingles</button>
-                        <button className="flex-1 flex flex-row py-1 pb-2 px-5">es - Español</button>
+                        className={`${isOpen ? '' : 'pointer-events-none'} flex absolute right-0 top-full z-20 flex-col mt-2 w-max max-w-screen-sm text-sm rounded-xl shadow-sm } font-label shadow-avocado-400/20 bg-sandrift-100`}>
+                        <button className="flex flex-row flex-1 px-5 pt-2 pb-1">English</button>
+                        <button className="flex flex-row flex-1 px-5 py-1 pb-2">Spanish</button>
                     </motion.div>
                 )}
             </AnimatePresence>

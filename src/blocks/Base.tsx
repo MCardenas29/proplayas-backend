@@ -1,9 +1,9 @@
 import { PropsWithChildren } from "react"
 
-export interface BlockInterface extends PropsWithChildren {
+type BlockInterface = PropsWithChildren & {
     title: string,
     showTitle: boolean,
-}
+};
 
 const Base = ({ title, children, showTitle }: BlockInterface) => (
     <div className="p-2" >

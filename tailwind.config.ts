@@ -8,8 +8,8 @@ const config: Config = {
     ],
     theme: {
         colors: {
-            'white': '#ffffff',
             'black': '#000000',
+            'white': '#ffffff',
             'sandrift': {
                 '50': '#f5f3f1',
                 '100': '#e6e1db',
