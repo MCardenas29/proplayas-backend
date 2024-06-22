@@ -1,9 +1,21 @@
-import { Icon } from "./icon";
-
-export default function({ className = '', size = 24 }: Icon) {
-    return (
-        <svg fill="none" stroke="currentColor" className={className} width={size} height={size} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-    )
-}
+import * as React from "react"
+import { SVGProps } from "react"
+const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    fill="none"
+    stroke="currentColor"
+    width="1em"
+    height="1em"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+)
+export { SvgComponent as FacebookSVG }
